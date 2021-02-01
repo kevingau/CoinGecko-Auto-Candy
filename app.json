@@ -16,8 +16,8 @@
     "PASSWORD": {
       "description": "CoinGecko password, update the value with your password"
     },
-    "USERNAME": {
-      "description": "CoinGecko username, update the value with your username"
+    "USEREMAIL": {
+      "description": "CoinGecko user email, update the value with your user email"
     }
   },
   "buildpacks": [

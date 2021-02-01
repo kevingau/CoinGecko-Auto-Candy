@@ -9,9 +9,9 @@ An automated script to get daily rewards from CoinGecko. Thanks to Heroku, the d
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
-2. Setup the `USERNAME` and `PASSWORD` variables
+2. Setup the `USEREMAIL` and `PASSWORD` variables
 
-Update the `USERNAME` and `PASSWORD` values with your CoinGecko username and password. 
+Update the `USEREMAIL` and `PASSWORD` values with your CoinGecko user email and password. 
 
 <img src="https://i.imgur.com/jV8a7fQ.png" width="600px">
 

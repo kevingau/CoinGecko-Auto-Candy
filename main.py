@@ -23,7 +23,7 @@ except BaseException:
 
 # Login
 try:
-    driver.find_element_by_id("user_email").send_keys(os.environ.get("USERNAME"))
+    driver.find_element_by_id("user_email").send_keys(os.environ.get("USEREMAIL"))
     driver.find_element_by_id("user_password").send_keys(os.environ.get("PASSWORD"))
     time.sleep(SLEEP_TIME)
     driver.find_element_by_xpath('//*[@id="new_user"]/input[8]').click()
