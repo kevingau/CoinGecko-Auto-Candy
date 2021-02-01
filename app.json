@@ -1,0 +1,35 @@
+{
+  "name": "coingecko_auto_candy",
+  "description": "Deploy a headless Chrome app to get daily candy on CoinGecko",
+  "repository": "https://github.com/kevingau/CoinGecko-Auto-Candy",
+  "logo": "https://i.imgur.com/iXnGKRa.png",
+  "keywords": ["Chrome", "Heroku", "Headless", "Selenium", "CoinGecko"],
+  "env": {
+    "CHROMEDRIVER_PATH": {
+      "description": "Chrome driver path",
+      "value": "/app/.chromedriver/bin/chromedriver"
+    },
+    "GOOGLE_CHROME_BIN": {
+      "description": "Chrome path",
+      "value": "/app/.apt/usr/bin/google-chrome"
+    },
+    "PASSWORD": {
+      "description": "CoinGecko password, update the value with your password"
+    },
+    "USERNAME": {
+      "description": "CoinGecko username, update the value with your username"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-google-chrome"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-chromedriver"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-python"
+    }
+  ],
+  "addons": ["scheduler"]
+}
